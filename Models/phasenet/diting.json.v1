@@ -1,0 +1,15 @@
+{
+    "docstring": "Model trained on the DiTing dataset, a large-scale Chinese seismic benchmark dataset.\nFor models fine-tuned on individual regions in China, please see: https://github.com/JUNZHU-SEIS/USTC-Pickers\nIf you use this model, please reference: Zhu J, Li ZF and Fang LH (2023). USTC-Pickers: a Unified Set of seismic phase pickers Transfer learned for China. Earthq Sci 36(2): 95–112, doi: 10.1016/j.eqs.2023.03.001",
+    "model_args": {
+        "component_order": "ZNE",
+        "phases": "NPS",
+        "norm": "std"
+    },
+    "seisbench_requirement": "0.3.2",
+    "version": "1",
+    "default_args": {
+        "P_threshold": 0.3,
+        "S_threshold": 0.3,
+	"blinding": [250, 250]
+    }
+}

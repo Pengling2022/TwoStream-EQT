@@ -1,0 +1,18 @@
+{
+  "component_order": "ZNE",
+  "phases": "NPS",
+  "docstring": "Original (non-conservative) EQTransformer model from Mousavi et al. (2020). Originally published under MIT License. Original available at https://github.com/smousavi05/EQTransformer/blob/01bf112a00c1a3bbb43adb2c7dba3e21b5fbcdb9/ModelsAndSampleData/EqT_original_model.h5 . \n\nConverted to SeisBench by Calum Chamberlain (calum.chamberlain@vuw.ac.nz) and Jannes Münchmeyer (munchmej@gfz-potsdam.de).",
+  "seisbench_requirement": "0.2.3",
+  "model_args": {
+  	"original_compatible": "non-conservative",
+  	"lstm_blocks": 2,
+	"filter_args": ["bandpass"],
+	"filter_kwargs": {
+		"freqmin": 1,
+		"freqmax": 45,
+		"corners": 2,
+		"zerophase": true
+	}
+  },
+  "version": "1"
+}

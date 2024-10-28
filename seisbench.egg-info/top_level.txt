@@ -1,0 +1,9 @@
+benchmark
+build
+configs
+dist
+gamma
+processing_data
+seisbench
+seisbench_models
+weights
